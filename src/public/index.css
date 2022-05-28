@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* reset end */
+
+
+/* variables */
+
+:root {
+  --primary: #2f3136; 
+  --primary-dark: #212327;
+  --secondary: FF6F61; /* navbars */
+  --secondary-dark: rgb(40, 122, 77);
+  --tertiary: #34568B;
+  --tertiary-dark: #29446e;
+  --quaternary: #FF6F61;
+  --quaternary-dark: #cc564b;
+  --quinary: #009B77;
+  --quinary-dark: #007459;
+  --danger: #ff0000;
+  --danger-dark: #960000;
+  --warning: #ff9f00;
+  --warning-dark: #b46f00;
+  --text : #fff;
+  --text-nav: #fff;
+}
+
+/* end variables */
+
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: var(--quaternary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-nav);
+}
+
+section { 
+  position: relative;
+}
+
+header.main-header { 
+  height: 4rem;
+  padding: 0 2rem;
+  box-shadow: 0 0.5rem 1rem var(--primary-dark);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+aside.activeUsers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80%;
+  min-width: 30%;
+  background-color: var(--secondary);
+  color: var(--text-nav);
+  padding: 1rem;
+  box-shadow: 0 0.5rem 1rem var(--primary-dark);
+}
+
+section.chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 80%;
+  min-width: 50%;
+  background-color: var(--secondary);
+  color: var(--text-nav);
+  padding: 1rem;
+  box-shadow: 0 0.5rem 1rem var(--primary-dark);
+}
+
+header.chat-header {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.chat-body  {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 60%;
+  flex: 8;
+  overflow-y: auto;
+}
+
+footer.chat-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.chat-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+footer.main-footer {
+  height: 4rem;
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  box-shadow: 0 0.5rem 1rem var(--primary-dark);
+  color: var(--text-nav);
+}
+
+

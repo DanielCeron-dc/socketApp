@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header class="main-header">
+    <h1>
+      Chat app
+    </h1>
+  </header>
+
+  <div class='container'>
+    <aside class='activeUsers'>
+      <ul id='activeUsers-list' class='activeUsers'>
+      </ul>
+    </aside>
+    <section class='chat'>
+      <header class='chat-header'>
+        <h2>
+          Juan
+        </h2>
+      </header>
+      <div class='chat-body'>
+        <ul id='chat-list' class='chat-list'>
+        </ul>
+      </div>
+
+      <footer class='chat-footer'>
+        <form id='chat-form' class='chat-form'>
+          <input type='text' id='chat-input' class='chat-input' placeholder='Type your message here...'>
+        </form>
+      </footer>
+    </section>
+  </div>
+
+  <footer class ='main-footer'>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
